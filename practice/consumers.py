@@ -26,9 +26,10 @@ class PracticeConsumer(AsyncJsonWebsocketConsumer):
         while True:
             if self.id:
                 try:
+
                     # Poll your data source here (e.g., query database, make API request)
                     # Replace this with your actual data polling logic
-                    data = "Some new data from the server at " + str(time.time())
+                    data = "Some new data from the seeeeeeeeerver at " + str(time.time())
                     result = AsyncResult(self.id)
                     if result.state == 'SUCCESS':
                         self.progress = 100
